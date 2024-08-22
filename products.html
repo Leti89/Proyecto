@@ -19,18 +19,10 @@
 
 
   <body>
-    <!-- nuevo -->
-    <nav class="navbar navbar-expand-lg p-1">
+    <!-- nuevo corregido-->
+   <nav class="navbar navbar-expand-lg p-1">
       <div class="container">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -39,9 +31,7 @@
               <a class="nav-link text-dark" href="index.html">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark" href="categories.html"
-                >Categorías</a
-              >
+              <a class="nav-link text-dark" href="categories.html">Categorías</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-dark" href="sell.html">Vender</a>
@@ -50,38 +40,12 @@
         </div>
       </div>
     </nav>
+  
     <h1>Listado de Productos</h1>
 
-
-  <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
-  <link href="css/font-awesome.min.css" rel="stylesheet">
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/styles.css" rel="stylesheet">
-  <script src="js/products.js"></script>
-</head>
-
-<body>
-  <h1>Listado de Productos</h1>
-    <div id="products-list"></div>
+    <div id="products-list" class="row d-flex justify-content-center"></div>
 
     <!-- Plantilla de producto -->
-    <div id="product-template" class="product">
-        <img src="" alt="Imagen del producto">
-        <div class="product-details">
-            <div class="product-name">Nombre del producto</div>
-            <div class="product-description">Descripción del producto</div>
-            <div class="product-price">Precio: </div>
-            <div class="product-sold">Vendidos: </div>
-        </div>
-    </div>
-    <!-- lo Nuevo -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-1">
-
-    <div class="container">
-      <div id="products-list" class="row d-flex justify-content-center"></div>
-    </div>
-
-
     <div id="product-template" class="col-4 d-none my-2">
       <div class="product bg-white rounded-3 shadow flex-column">
         <div class="rounded-top position-relative">
@@ -95,61 +59,16 @@
         </div>
       </div>
     </div>
-
-  </nav>
-  <!-- lo Nuevo --
-  <main class="pb-5 container">
-    <div class="container">
-      <div class="alert alert-danger text-center" role="alert">
-        <h4 class="alert-heading">Funcionalidad en desarrollo</h4>
-      </div>
-    </div>
-  </main>
-   lo Nuevo -->
-  <footer class="text-muted">
-    <div class="container">
-      <p class="float-end">
-        <a href="#">Volver arriba</a>
-      </p>
-      <p>Este sitio forma parte de <a href="https://jovenesaprogramar.edu.uy/" target="_blank">Jovenes a Programar</a></p>
-    </div>
-  </footer>
-  <div id="spinner-wrapper">
-    <div class="lds-ring">
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-  </div>
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/init.js"></script>
-  <script src="js/products.js"></script>
-
-
-
-    <!-- nuevo 
-    <main class="pb-5 container">
-      <div class="container">
-        <div class="alert alert-danger text-center" role="alert">
-          <h4 class="alert-heading">Funcionalidad en desarrollo</h4>
-        </div>
-      </div>
-    </main>
-    nuevo  -->
+  
     <footer class="text-muted">
       <div class="container">
         <p class="float-end">
           <a href="#">Volver arriba</a>
         </p>
-        <p>
-          Este sitio forma parte de
-          <a href="https://jovenesaprogramar.edu.uy/" target="_blank"
-            >Jovenes a Programar</a
-          >
-        </p>
+        <p>Este sitio forma parte de <a href="https://jovenesaprogramar.edu.uy/" target="_blank">Jovenes a Programar</a></p>
       </div>
     </footer>
+  
     <div id="spinner-wrapper">
       <div class="lds-ring">
         <div></div>
@@ -158,8 +77,10 @@
         <div></div>
       </div>
     </div>
+  
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/init.js"></script>
     <script src="js/products.js"></script>
   </body>
-</html>
+  </html>
+
