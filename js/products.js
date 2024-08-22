@@ -1,5 +1,5 @@
 
-const url = "https://japceibal.github.io/emercado-api/cats_products/101.json";
+const url1 = "https://japceibal.github.io/emercado-api/cats_products/101.json";
 
 async function loadProducts() {
   try {
@@ -37,7 +37,7 @@ async function loadProducts() {
 // Cargar los productos cuando se carga la página
 window.onload = loadProducts;
 
-        const url = 'https://japceibal.github.io/emercado-api/cats_products/101.json';
+        const url2 = 'https://japceibal.github.io/emercado-api/cats_products/101.json';
 
         // Función para cargar los productos
         async function loadProducts() {
