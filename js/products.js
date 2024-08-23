@@ -16,11 +16,15 @@ async function loadProducts() {
       productClone.classList.remove("d-none");
       productClone.style.display = 'flex';
 
+      asdasdjasjdsjad
+
+
+      asjdasjdjas
       // Modificar el contenido de la plantilla clonada
       productClone.querySelector("img").src = product.image;
-      productClone.querySelector(".product-name").textContent = product.name;
       productClone.querySelector(".product-description").textContent = product.description;
       productClone.querySelector(".product-price").textContent = `Precio: ${product.cost} ${product.currency}`;
+      testeando conflictos para aprender como funcionan
       // productClone.querySelector('.product-sold').textContent = `Vendidos: ${product.soldCount}`;
 
       // Añadir el producto clonado al contenedor principal
