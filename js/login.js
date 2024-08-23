@@ -1,5 +1,3 @@
-
-
 document.addEventListener("DOMContentLoaded", function() {
     // Datos
     const formulario = document.getElementById('miFormulario');
@@ -24,6 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Validaciones
     function validarFormulario(event) {
+        event.preventDefault();
         let valido = true;
 
         
@@ -45,10 +44,16 @@ document.addEventListener("DOMContentLoaded", function() {
             ocultarError(contraseñaError, contraseñaErrorContenedor);
         }
 
-        if (!valido) {
-            event.preventDefault(); 
+        if (valido) {
+            localStorage.setItem("user", nombreInput.value.trim())
+            // Redirigir 
+            window.location = 'index.html'; 
         }
     }
 
     formulario.addEventListener('submit', validarFormulario);
 });
+
+
+
+
