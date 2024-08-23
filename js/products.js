@@ -8,20 +8,22 @@ async function loadProducts() {
     const productsList = document.getElementById("products-list");
     const productTemplate = document.getElementById("product-template");
 
-    productTemplate.classList.add('d-none');
     // Iterar sobre los productos y agregarlos al DOM
     data.products.forEach((product) => {
       // Clonar la plantilla de producto
       const productClone = productTemplate.cloneNode(true);
       productClone.classList.remove("d-none");
-      productClone.style.display = 'flex';
+      productClone.classList.add("d-flex");
 
       // Modificar el contenido de la plantilla clonada
       productClone.querySelector("img").src = product.image;
       productClone.querySelector(".product-name").textContent = product.name;
-      productClone.querySelector(".product-description").textContent = product.description;
-      productClone.querySelector(".product-price").textContent = `Precio: ${product.cost} ${product.currency}`;
-      // productClone.querySelector('.product-sold').textContent = `Vendidos: ${product.soldCount}`;
+      productClone.querySelector(".product-description").textContent =
+        product.description;
+      productClone.querySelector(
+        ".product-price"
+      ).textContent = `Precio: ${product.cost} ${product.currency}`;
+      productClone.querySelector('.product-sold').textContent = `Vendidos: ${product.soldCount}`;
 
       // Añadir el producto clonado al contenedor principal
       productsList.appendChild(productClone);
@@ -32,4 +34,3 @@ async function loadProducts() {
 }
 
 window.onload = loadProducts;
-
