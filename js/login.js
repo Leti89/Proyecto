@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function() {
             ocultarError(contraseñaError, contraseñaErrorContenedor);
         }
 
-    } if (valido) {
+     if (valido) {
             localStorage.setItem("user", nombreInput.value.trim())
             // Redirigir 
             window.location = 'index.html'; 
