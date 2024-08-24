@@ -16,15 +16,17 @@ document.addEventListener("DOMContentLoaded", function(){
         localStorage.setItem("catID", 103);
         window.location = "products.html"
     });
-   window.onload = function() {
-          // Verificar si el usuario está logueado
-          const uservalido = localStorage.getItem('uservalido');
-          
-          // Si no está logueado, redirigir al login.html
-          if (uservalido) {
-            window.location.href = 'login.html';
-          }
-        };
-        
+    // Función para verificar si el usuario está autenticado
+   function checkAuth() {
+    const isAuthenticated = localStorage.getItem('isAuthenticated');
+    
+    // Si no hay sesión, redirigir al login
+    if (!isAuthenticated) {
+        window.location.href = 'login.html'; // Redirigir al login
+    }
+}
+
+// Ejecutar la función al cargar la página
+document.addEventListener('DOMContentLoaded', checkAuth);
 })
 });
