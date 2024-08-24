@@ -16,11 +16,5 @@ document.addEventListener("DOMContentLoaded", function(){
         localStorage.setItem("catID", 103);
         window.location = "products.html"
     });
-    window.onload = function() {
-        const isAuthenticated = localStorage.getItem('isAuthenticated');
-        if (!isAuthenticated) {
-            window.location.href = 'login.html';
-        }
-    }
-})
+});
 });
