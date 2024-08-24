@@ -52,6 +52,18 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     formulario.addEventListener('submit', validarFormulario);
+    // Función para verificar si el usuario está autenticado
+   function checkAuth() {
+    const isAuthenticated = localStorage.getItem('isAuthenticated');
+    
+    // Si no hay sesión, redirigir al login
+    if (!isAuthenticated) {
+        window.location.href = 'login.html'; // Redirigir al login
+    }
+}
+
+// Ejecutar la función al cargar la página
+document.addEventListener('DOMContentLoaded', checkAuth);
 });
 
 
