@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
             ocultarError(nombreError, nombreErrorContenedor);
         }
 
-        
+
         if (contraseñaInput.value.trim() === '') {
             mostrarError(contraseñaError, contraseñaErrorContenedor, 'La contraseña es requerida.');
             valido = false;
@@ -44,11 +44,6 @@ document.addEventListener("DOMContentLoaded", function() {
         } else {
             ocultarError(contraseñaError, contraseñaErrorContenedor);
         }
-
-        if (!valido) {
-            event.preventDefault(); 
-        }
     }
-
-    formulario.addEventListener('submit', validarFormulario);
-});
+    formulario.addEventListener('submit', validarFormulario)
+}); 
