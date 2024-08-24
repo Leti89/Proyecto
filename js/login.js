@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
             ocultarError(nombreError, nombreErrorContenedor);
         }
 
-        
+
         if (contraseñaInput.value.trim() === '') {
             mostrarError(contraseñaError, contraseñaErrorContenedor, 'La contraseña es requerida.');
             valido = false;
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function() {
             ocultarError(contraseñaError, contraseñaErrorContenedor);
         }
 
-        if (valido) {
+    } if (valido) {
             localStorage.setItem("user", nombreInput.value.trim())
             // Redirigir 
             window.location = 'index.html'; 
@@ -53,7 +53,5 @@ document.addEventListener("DOMContentLoaded", function() {
 
     formulario.addEventListener('submit', validarFormulario);
 });
-
-
 
 
