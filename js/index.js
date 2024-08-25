@@ -24,22 +24,5 @@ let isAuthenticated = false; // Cambia esto a true cuando el usuario inicie sesi
 if (!isAuthenticated) {
     // Si no está autenticado, redirige a la página de login
     window.location.href = "login.html"
-
-// Simula un estado de autenticación
-let isAuthenticated = false; // Cambia esto a true cuando el usuario inicie sesión
-
-// Verifica si el usuario está autenticado
-if (!isAuthenticated) {
-    // Si no está autenticado, redirige a la página de login
-    window.location.href = "login.html"
-
-// Simula un estado de autenticación
-let isAuthenticated = true; // Cambia esto a true cuando el usuario inicie sesión
-
-// Verifica si el usuario está autenticado
-if (!isAuthenticated) {
-    // Si no está autenticado, redirige a la página de portada
-    window.location.href = "index.html";
-}}
 }
 });
