@@ -43,6 +43,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
 
         if (valido) {
+            localStorage.setItem('isAuthenticated', 'true');
             localStorage.setItem("user", nombreInput.value.trim());
             // Redirigir
             window.location.href = 'index.html';
