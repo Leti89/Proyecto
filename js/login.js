@@ -8,16 +8,16 @@ document.addEventListener("DOMContentLoaded", function() {
     const nombreErrorContenedor = nombreError.parentElement;
     const contraseñaErrorContenedor = contraseñaError.parentElement;
 
-    // mostrar mensaje de error
+    // Mostrar mensaje de error
     function mostrarError(elementoError, contenedorError, mensaje) {
         elementoError.textContent = mensaje;
-        contenedorError.style.display = 'block'; //contenedor
+        contenedorError.style.display = 'block';
     }
 
-    //ocultar mensaje
+    // Ocultar mensaje
     function ocultarError(elementoError, contenedorError) {
         elementoError.textContent = '';
-        contenedorError.style.display = 'none'; // Ocultar contenedor(dolor de cabeza hacer esto)
+        contenedorError.style.display = 'none';
     }
 
     // Validaciones
@@ -25,14 +25,12 @@ document.addEventListener("DOMContentLoaded", function() {
         event.preventDefault();
         let valido = true;
 
-        
         if (nombreInput.value.trim() === '') {
             mostrarError(nombreError, nombreErrorContenedor, 'El nombre de usuario es requerido.');
             valido = false;
         } else {
             ocultarError(nombreError, nombreErrorContenedor);
         }
-
 
         if (contraseñaInput.value.trim() === '') {
             mostrarError(contraseñaError, contraseñaErrorContenedor, 'La contraseña es requerida.');
@@ -44,11 +42,16 @@ document.addEventListener("DOMContentLoaded", function() {
             ocultarError(contraseñaError, contraseñaErrorContenedor);
         }
 
-     if (valido) {
-            localStorage.setItem("user", nombreInput.value.trim())
-            // Redirigir 
-            window.location = 'index.html'; 
+        if (valido) {
+            localStorage.setItem("user", nombreInput.value.trim());
+            // Redirigir
+            window.location.href = 'index.html';
         }
+    }
+
+    // Asocia la función de validación al formulario.s
+    formulario.addEventListener('submit', validarFormulario);
+});
     }   
 });
 
