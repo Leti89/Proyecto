@@ -15,10 +15,8 @@ document.addEventListener("DOMContentLoaded", function(){
     document.getElementById("muebles").addEventListener("click", function() {
         localStorage.setItem("catID", 103);
         window.location = "products.html"
-    });
-    
+    });   
 })
-});
 // Simula un estado de autenticación
 let isAuthenticated = false; // Cambia esto a true cuando el usuario inicie sesión
 
@@ -27,3 +25,4 @@ if (!isAuthenticated) {
     // Si no está autenticado, redirige a la página de login
     window.location.href = "login.html"
 };
+});
