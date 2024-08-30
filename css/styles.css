@@ -189,8 +189,50 @@ a.custom-card:hover {
   color: orange;
 }
 
+/* web responsiva*/
 
-/*css login*/
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 576px) {
+  .col-sm-6, .col-sm-12 {
+    margin-bottom: 15px;
+  }
+}
+
+/* Estilos para pantallas medianas */
+@media (min-width: 577px) and (max-width: 768px) {
+  .col-sm-6 {
+    margin-bottom: 15px;
+  }
+}
+
+/* Estilos para pantallas grandes */
+@media (min-width: 769px) {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .col-md-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+}
+
+/* Ajustes de texto para diferentes tamaños de pantalla */
+@media (max-width: 576px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 577px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+  /*css login*/
 
 .alert {
   display: none;
@@ -230,32 +272,32 @@ h1{
 }
 input[type="text"],
 input[type="password"] {
-  margin-left: 8%;
-  width: 80%;
+  width: 100%;
   padding: 10px;
   margin-bottom: 15px;
-  border: 1px solid #ddd;
+  border: 1px solid #f8f9fa;
   border-radius: 3px;
+  justify-content: center;
 font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
   
   input[type="submit"]{
-
-      width: 80%;
+      width: 100%;
       padding: 10px;
       background-color: #007bff;
-      color: white;
+      color: #f8f9fa;
       border: none;
       border-radius: 4px;
       cursor: pointer;
-      margin-left: 8%;
+      justify-content: left;
+      display: flex;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       
   }
 input[type="submit"]:hover{
-  background-color: #0056b0;
+  background-color:#0056b0;
 }
 body{
-  background-color: #ffbe46e7;
+  background-color:#f8f9fa;
   margin-top: 10%;
   margin-left: 20%;
   margin-right: 20%;
@@ -273,5 +315,8 @@ footer{
   height: auto;
   display: block;
   margin-bottom: 20px;
+}
+.float-end{
+  display: flex;
 }
 /*fin css login*/
